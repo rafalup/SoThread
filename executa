@@ -1,0 +1,13 @@
+#!/bin/bash
+
+gcc main.c -o router -lpthread
+
+gnome-terminal --geometry=74x28 -- ./router 1
+gnome-terminal --geometry=74x28 -- ./router 2
+gnome-terminal --geometry=74x28 -- ./router 3
+gnome-terminal --geometry=74x28 -- ./router 4
+gnome-terminal --geometry=74x28 -- ./router 5
+gnome-terminal --geometry=74x28 -- ./router 6
+
+
+rm -rf router
